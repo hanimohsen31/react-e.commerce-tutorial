@@ -1,0 +1,43 @@
+@import "../../../global.scss";
+
+.Slider{
+    height: calc(100vh - 90px);
+    width: 100w;
+    .carousel{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        .carousel-inner{
+            height: 100%;
+            .carousel-item{
+                height: 100%;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .carousel-control-prev{
+            width: 8% !important;
+            @media (max-width: $tablet) {
+                margin-left: 25px;
+            }
+            .icon{
+                font-size: 50px;
+                transform: rotate(90deg);
+                color: lightgray;
+            }
+        }
+        .carousel-control-next{
+            width: 8% !important;
+            @media (max-width: $tablet) {
+                margin-right: 25px;
+            }
+            .icon{
+                font-size: 50px;
+                transform: rotate(270deg);
+                color: lightgray;
+            }
+        }
+    }
+}

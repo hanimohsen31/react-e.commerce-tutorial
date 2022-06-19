@@ -1,0 +1,55 @@
+@import "../../../global.scss";
+
+.Newsletter {
+    background-color: #77777714;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            font-size: 80px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            @media (max-width: $tablet) {
+                font-size: 50px;
+            }
+        }
+        h5 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .mail {
+            border: none;
+            width: 70%;
+            div {
+                form {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    input {
+                        border: none;
+                        outline: #777777b9 !important;
+                        border-radius: 1px;
+                        box-shadow: none;
+                    }
+                    button {
+                        border: none;
+                        padding: 0;
+                        span {
+                            padding: 0.375rem 1.25rem;
+                            background-color: #979696f7;
+                            border: none;
+                            color: white;
+                            border-radius: 1px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

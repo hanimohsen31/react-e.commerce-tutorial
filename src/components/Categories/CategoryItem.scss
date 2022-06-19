@@ -1,0 +1,44 @@
+.CategoryItem {
+    .col {
+        .card {
+            // position: relative;
+            img{
+                height: 70vh;
+                object-fit: cover;
+            }
+            justify-content: center;
+            align-items: center;
+            .cardBody {
+                // position: absolute;
+                position: absolute !important;
+                top: 50%;
+                // left: 50%;
+                padding: 0;
+                margin: auto;
+                color: white;
+                text-align: center;
+                width: 100%;
+                h5{
+                    font-size: 60px;
+                    font-weight: 700;
+                    padding: 0;
+                    margin: auto;
+                }
+                button{
+                    border: none;
+                    padding: 10px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-top: 15px;
+                    &:hover{
+                        color: gray;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

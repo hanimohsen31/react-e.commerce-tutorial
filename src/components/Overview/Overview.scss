@@ -1,0 +1,23 @@
+@import "../../../global.scss";
+
+ul {
+        margin: 0;
+        padding: 0;
+}
+h3{
+    @media (max-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.button {
+    @media (max-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

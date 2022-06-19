@@ -1,6 +1,7 @@
 import React from "react";
 import { Announcement } from "../components/Announcement/Announcement";
 import { Navbar } from "../components/Navbar/Navbar";
+import { Navbar2 } from "../components/Navbar2/Navbar2";
 import { Newsletter } from "../components/Newsletter/Newsletter";
 import { Products } from "../components/Products/Products";
 import { Footer } from "../components/Footer/Footer";
@@ -18,6 +19,7 @@ export const ProductsPage = () => {
     <div className="ProductsPage">
       <Announcement />
       <Navbar />
+      <Navbar2 />
       <Filter />
       <Products />
       <div className="container text-center my-5">

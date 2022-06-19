@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { styled } from "@mui/material/styles";
-import SearchIcon from "@mui/icons-material/Search";
+// import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Badge from "@mui/material/Badge";
 import IconButton from "@mui/material/IconButton";
@@ -20,12 +20,10 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 export const Navbar = () => {
   // to get data from store
   const cartQuantity = useSelector((state) => state.cart.totalQuantity);
-
   const history = useHistory();
-
   const handleClick = (event) => {
     event.preventDefault();
-    history.push({ pathname: "/overview" });
+    history.replace({ pathname: "/overview" });
   };
 
   return (

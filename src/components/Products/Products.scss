@@ -1,7 +1,16 @@
+@import "../../../global.scss";
+
 .Products {
     margin-top: 100px;
     margin-bottom: 100px;
-
+    h3 {
+        font-weight: 500;
+        font-size: 35px;
+        // @media (min-width: $tablet) {
+        //     // display: none;
+        //     font-size: 35px;
+        // }
+    }
     .productsContainer {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 4fr));

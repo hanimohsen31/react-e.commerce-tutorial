@@ -1,0 +1,8 @@
+deployment on firebase
+npm install -g firebase-tools
+firebase login
+firebase init
+choose hosring and press space keyboard button then enter
+single html => y
+automatic deploy => no
+firebase deploy

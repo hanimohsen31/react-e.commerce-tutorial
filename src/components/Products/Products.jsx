@@ -32,6 +32,7 @@ export const Products = () => {
   
   return (
     <div className="Products container-fluid">
+        <h3 className="text-center bold my-5">Products</h3>
       <div className="productsContainer">
         {data.map((elm) => (
           <ProductItem key={elm.id} id={elm.id} img={elm.img} title={elm.title} price={elm.price} desc={elm.desc}/>

@@ -1,0 +1,14 @@
+@import "../../global.scss";
+
+.OverviewPage {
+    .paypal {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @media (max-width: $tablet) {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+}

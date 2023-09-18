@@ -67,7 +67,7 @@ export const popularProducts = [
   },
   {
     id: 7,
-    img: "https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+    img: "https://cdn.gutsgusto.com/pictures/hd/83964-3.jpg",
   },
   {
     id: 8,
@@ -95,5 +95,3 @@ export const sliderData = [
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30 % OFF FOR NEW ARRIVAL",
   },
 ];
-
-

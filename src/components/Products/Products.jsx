@@ -2,6 +2,8 @@ import React from "react";
 import { ProductItem } from "./ProductItem";
 import { useEffect ,useState} from "react";
 import { useSelector } from 'react-redux';
+import { environment } from "../../store/environment";
+
 import "./Products.scss";
 
 export const Products = () => {
@@ -11,9 +13,7 @@ export const Products = () => {
 
   useEffect(()=>{
     const GetDataFromFireBase = async () => {
-    const response = await fetch(
-      "https://reactcourse-babcb-default-rtdb.firebaseio.com/popularProducts.json"
-    );
+    const response = await fetch(`${environment.baseUrl}/popularProducts.json`);
     if (!response.ok) {
       throw new Error("Error of My Own");
     }

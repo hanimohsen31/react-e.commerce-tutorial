@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { cartActions } from "./store/cartSlice";
+import { environment } from "./store/environment";
 
 function App() {
   // to get data from store
@@ -29,7 +30,7 @@ function App() {
     // GET :: calling data from firebase
     const GetDataFromFireBase = async () => {
       const response = await fetch(
-        `https://reactcourse-babcb-default-rtdb.firebaseio.com/cart/${userId}.json`
+        `${environment.baseUrl}/cart/${userId}.json`
       );
       if (!response.ok) {
         console.log("ERROR 1");
@@ -51,7 +52,7 @@ function App() {
     const sendCartData = async () => {
       // start of sendCartData function
       const response = await fetch(
-        `https://reactcourse-babcb-default-rtdb.firebaseio.com/cart/${userId}.json`,
+        `${environment.baseUrl}/cart/${userId}.json`,
         { method: "PUT", body: JSON.stringify(cart) }
       );
       if (!response.ok) {

@@ -39,8 +39,8 @@ function App() {
       dispatch(
         cartActions.replaceCart({
           items: data?.items || [],
-          totalQuantity: data.totalQuantity || 0,
-          OverAllPrice: data.OverAllPrice || 0,
+          totalQuantity: data?.totalQuantity || 0,
+          OverAllPrice: data?.OverAllPrice || 0,
         })
       );
       return data;

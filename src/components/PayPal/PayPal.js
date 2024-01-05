@@ -41,6 +41,7 @@ export default function Paypal18() {
         },
       })
       .render(paypal.current);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

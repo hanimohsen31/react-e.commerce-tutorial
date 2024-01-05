@@ -38,7 +38,7 @@ function App() {
       const data = await response.json();
       dispatch(
         cartActions.replaceCart({
-          items: data.items || [],
+          items: data?.items || [],
           totalQuantity: data.totalQuantity || 0,
           OverAllPrice: data.OverAllPrice || 0,
         })
@@ -46,6 +46,7 @@ function App() {
       return data;
     };
     GetDataFromFireBase();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   //---------------------------------------------------------------------------
   useEffect(() => {
@@ -63,6 +64,7 @@ function App() {
     sendCartData().catch((error) => {
       console.log("ERROR 3");
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cart]);
   //---------------------------------------------------------------------------
   return (

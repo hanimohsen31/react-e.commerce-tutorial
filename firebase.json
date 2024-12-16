@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "react-ecommerce-100",
     "public": "build",
     "ignore": [
       "firebase.json",
